@@ -1,115 +1,103 @@
-# DorkHunter - Advanced Dorking Tool for Bug Bounty Hunters
+# <img src="https://raw.githubusercontent.com/cyberajju/drokhunter-assets/main/logo.gif" width="32px"> DorkHunter
 
-A web-based tool for bug bounty hunters and security researchers to quickly generate Google and GitHub dorking queries for a target domain. DorkHunter helps streamline the reconnaissance phase by providing ready-to-use dorks that can uncover sensitive information, potential vulnerabilities, and entry points.
+<div align="center">
 
-## Enhanced Features
+![DorkHunter Banner](https://raw.githubusercontent.com/cyberajju/drokhunter-assets/main/banner.gif)
 
-- **Comprehensive Google Dorking**: Generate specialized Google dork queries categorized into 8 major vulnerability types
-- **Advanced GitHub Dorking**: Powerful GitHub dork queries to find sensitive information in code repositories with specialized categories
-- **Matrix-style Cybersecurity UI**: Immersive hacker-themed user interface with matrix animation
-- **One-Click Search**: Click on any dork to open the search results directly in Google or GitHub
-- **Category-Based Organization**: Dorks organized into logical categories for better reconnaissance workflow
-- **Pro Dorking Tips**: Helpful tips for effective dorking techniques
-- **Mobile-Friendly Design**: Clean, responsive design that works on all devices
+### Advanced Dorking Tool for Bug Bounty Hunters & Ethical Hackers
 
-## Categories of Dorks
+[![GitHub](https://img.shields.io/badge/GitHub-CyberTechAjju-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cyberajju)
+[![YouTube](https://img.shields.io/badge/YouTube-CyberTechAjju-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@cybertechajju)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ajay_Meena-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ajay-meena-6b432128a)
 
-### Google Dorking Categories:
+</div>
+
+## 💡 What is DorkHunter?
+
+DorkHunter is a powerful web-based reconnaissance tool that generates ready-to-use Google and GitHub dorking queries to uncover sensitive information, potential vulnerabilities, and entry points for ethical hacking and bug bounty hunting.
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/cyberajju/drokhunter-assets/main/demo.gif" alt="DorkHunter Demo" width="700px">
+</div>
+
+## ✨ Key Features
+
+- 🔍 **30+ Google Dorks** covering sensitive files, admin panels, vulnerabilities & more
+- 🔬 **35+ GitHub Dorks** to find credentials, API keys, tokens & sensitive data
+- 💻 **Matrix-Style UI** with cybersecurity-themed interface
+- 🖱️ **One-Click Searching** - direct access to search results
+- 📱 **Responsive Design** - works on all devices
+- 💪 **Pro Tips** included for advanced dorking techniques
+
+## 🚀 Usage
+
+1. Enter target domain (e.g., `example.com`)
+2. Select Google and/or GitHub dorking
+3. Click "Hunt" button
+4. Click on any generated dork to open search results
+5. Switch between Google and GitHub tabs as needed
+
+## 🔧 Dork Categories
+
+<details>
+<summary><b>Google Dork Categories</b></summary>
+
 - Sensitive Files
 - Configuration Files
 - Database Files
-- Backup Files
-- Log Files
-- Password Files
-- Login Pages
-- Admin Panels
-- User Portals
+- Login Pages & Admin Panels
 - Open Directories
 - Exposed Documents
-- Financial Documents
 - API Documentation
-- API Keys & Tokens
-- Git Repositories
-- Server Status
-- Server Configuration
-- Database Exposure
-- Error Pages
-- SQL Injection
-- File Upload
-- Security Misconfiguration
+- Server Status & Errors
+- SQL Injection Points
 - Test/Staging Environments
-- Cloud Storage
-- Exposed Storage
-- Mail Server
-- Internal Communications
+- Cloud Storage & More
+</details>
 
-### GitHub Dorking Categories:
+<details>
+<summary><b>GitHub Dork Categories</b></summary>
+
 - Passwords & Secrets
 - Hard-coded Credentials
-- API Keys
-- AWS Keys
-- Google Cloud/Firebase
-- Azure Secrets
-- JWT Tokens
+- API & AWS Keys
 - Database Connection Strings
-- MongoDB Connection
-- SQL Connection
 - Private SSH Keys
-- Authorization Tokens
-- Certificate Files
 - Environment Files
-- Web Configuration
-- App Configuration
-- Kubernetes/Docker Configs
-- WordPress Config
-- Slack Tokens
-- Stripe API Keys
-- GitHub/OAuth Tokens
-- Twilio API Keys
-- SendGrid API Keys
-- PayPal/Braintree
-- Internal URLs
-- Server IPs
-- Email/User Data
+- Cloud Configuration
+- Platform-specific Tokens
 - Infrastructure Info
-- Source Code
-- Mobile App Source
-- Backend Code
-- Security Issues
+- Source Code & More
+</details>
 
-## How to Use
+## 🛠️ Host It Yourself
 
-1. Enter a target domain (e.g., example.com) in the input field
-2. Select which dorking engines you want to use (Google, GitHub, or both)
-3. Click the "Hunt" button to generate dorking queries
-4. Click on any of the generated dorks to open the search results in a new tab
-5. Use the tabs to switch between Google and GitHub dorks
-6. Refer to the Pro Dorking Tips section for advanced techniques
+```bash
+# Clone the repository
+git clone https://github.com/cyberajju/DorkHunter.git
 
-## Host on GitHub Pages
+# Navigate to the directory
+cd DorkHunter
 
-This project is designed to be easily hosted on GitHub Pages:
+# Deploy to GitHub Pages
+# 1. Go to repository Settings > Pages
+# 2. Select branch (main)
+# 3. Your tool will be live at: https://[username].github.io/DorkHunter/
+```
 
-1. Push the code to a GitHub repository
-2. Go to repository Settings > Pages
-3. Select the branch you want to deploy from (usually `main`)
-4. Your DorkHunter tool will be available at https://[your-username].github.io/[repo-name]/
+## ⚠️ Disclaimer
 
-## Disclaimer
+This tool is for **educational purposes only**. Only use on systems you have explicit permission to test.
 
-This tool is created for **educational purposes only**. It is intended for ethical security research, bug bounty hunting, and improving the security posture of systems you have proper authorization to test.
+<div align="center">
 
-**Do NOT use this tool to:**
-- Access unauthorized information
-- Perform illegal activities
-- Target systems without proper authorization
+**[Live Demo](https://cyberajju.github.io/DorkHunter)** | **[Report Issues](https://github.com/cyberajju/DorkHunter/issues)** | **[Follow Updates](https://twitter.com/CyberTechAjju)**
 
-The creator of this tool is not responsible for any misuse or damage caused by using this tool.
+</div>
 
-## Credits
+---
 
-Developed by CyberTechAjju
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
+<div align="center">
+<p>Created with ❤️ by <a href="https://github.com/cyberajju">CyberTechAjju</a></p>
+<p>© 2025 CyberTechAjju | All Rights Reserved</p>
+</div> 

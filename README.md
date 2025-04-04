@@ -10,6 +10,8 @@
 [![YouTube](https://img.shields.io/badge/YouTube-CyberTechAjju-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@cybertechajju)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ajay_Meena-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ajay-meena-6b432128a)
 
+**🔗 [Live Demo: https://cyberajju.github.io/DorkHunter/](https://cyberajju.github.io/DorkHunter/)**
+
 </div>
 
 ## 💡 What is DorkHunter?
@@ -91,7 +93,7 @@ This tool is for **educational purposes only**. Only use on systems you have exp
 
 <div align="center">
 
-**[Live Demo](https://cyberajju.github.io/DorkHunter)** | **[Report Issues](https://github.com/cyberajju/DorkHunter/issues)** | **[Follow Updates](https://twitter.com/CyberTechAjju)**
+**[Live Demo](https://cyberajju.github.io/DorkHunter/)** | **[Report Issues](https://github.com/cyberajju/DorkHunter/issues)** | **[Follow Updates](https://twitter.com/CyberTechAjju)**
 
 </div>
 

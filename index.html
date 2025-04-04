@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DorkHunter - Advanced Dorking Tool for Bug Bounty Hunters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-bug"></i> DorkHunter
+            </div>
+            <p class="tagline">Advanced Reconnaissance Tool for Ethical Hackers & Bug Bounty Hunters</p>
+        </header>
+
+        <main>
+            <div class="search-container">
+                <div class="input-group">
+                    <input type="text" id="domain-input" placeholder="Enter target domain (e.g., example.com)">
+                    <button id="search-btn">Hunt <i class="fas fa-search"></i></button>
+                </div>
+                <div class="engine-selector">
+                    <label>
+                        <input type="checkbox" id="google-engine" checked>
+                        <span class="engine-label">Google Dorking</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" id="github-engine" checked>
+                        <span class="engine-label">GitHub Dorking</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="results-container">
+                <div class="results-tab">
+                    <button class="tab-btn active" data-tab="google">Google Dorks</button>
+                    <button class="tab-btn" data-tab="github">GitHub Dorks</button>
+                </div>
+                
+                <div class="results-content">
+                    <div id="google-results" class="tab-content active">
+                        <!-- Google dorking results will appear here -->
+                        <div class="no-results">Enter a domain to see Google dorks</div>
+                    </div>
+                    <div id="github-results" class="tab-content">
+                        <!-- GitHub dorking results will appear here -->
+                        <div class="no-results">Enter a domain to see GitHub dorks</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tips-container">
+                <h3 class="tips-title"><i class="fas fa-lightbulb"></i> Pro Dorking Tips</h3>
+                <ul class="tips-list">
+                    <li>Use specific file types with <code>ext:</code> to find sensitive documents</li>
+                    <li>Combine multiple operators like <code>site:</code> and <code>intext:</code> for precise results</li>
+                    <li>Look for open directories with <code>intitle:"index of"</code></li>
+                    <li>For GitHub dorking, search for specific file extensions like <code>.env</code> or <code>config.json</code></li>
+                    <li>Find exposed API keys with <code>"api_key" "token"</code> in code repositories</li>
+                    <li>Always use dorking responsibly and ethically for authorized targets only</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created for educational purposes only. For use in ethical bug bounty hunting and reconnaissance.</p>
+            <p class="disclaimer">This tool is not intended for illegal activities.</p>
+            <div class="social-links">
+                <a href="https://github.com/cyberajju" target="_blank" title="GitHub" class="github-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/@cybertechajju" target="_blank" title="YouTube" class="youtube-link"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/ajay-meena-6b432128a" target="_blank" title="LinkedIn" class="linkedin-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 CyberTechAjju | All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple Matrix-like effect for background
+        document.addEventListener('DOMContentLoaded', function() {
+            const matrixBg = document.querySelector('.matrix-bg');
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            matrixBg.appendChild(canvas);
+            
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            let chars = "01";
+            chars = chars.split("");
+            
+            const fontSize = 10;
+            const columns = canvas.width / fontSize;
+            const drops = [];
+            
+            for (let x = 0; x < columns; x++) {
+                drops[x] = 1;
+            }
+            
+            function draw() {
+                ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                ctx.fillStyle = "#0f0";
+                ctx.font = fontSize + "px monospace";
+                
+                for (let i = 0; i < drops.length; i++) {
+                    const text = chars[Math.floor(Math.random() * chars.length)];
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                    
+                    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                        drops[i] = 0;
+                    }
+                    
+                    drops[i]++;
+                }
+            }
+            
+            setInterval(draw, 40);
+            
+            window.addEventListener('resize', function() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+        });
+    </script>
+</body>
+</html> 
